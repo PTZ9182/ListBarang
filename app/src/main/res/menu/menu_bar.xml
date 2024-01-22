@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/activityMain"
+        android:icon="@drawable/baseline_view_list_24"
+        android:title="List" />
+    <item
+        android:id="@+id/activityBarang"
+        android:icon="@drawable/baseline_shopping_cart_24"
+        android:title="Barang" />
+
+</menu>

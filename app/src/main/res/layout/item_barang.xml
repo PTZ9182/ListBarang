@@ -1,0 +1,190 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        android:backgroundTint="@color/white"
+        app:cardBackgroundColor="@drawable/pick_background_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/idbarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/idbarang"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/kesusahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/namabarang"
+                android:textColor="@color/abu_abu_muda"
+                app:layout_constraintStart_toStartOf="@+id/idbarang"
+                app:layout_constraintTop_toBottomOf="@+id/idbarang" />
+
+            <TextView
+                android:id="@+id/barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="@string/namabarang1"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/kesusahan"
+                app:layout_constraintTop_toBottomOf="@+id/kesusahan"
+                app:drawableTint="@color/black" />
+
+            <TextView
+                android:id="@+id/kesusahan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/jumlahbarang3"
+                android:textColor="@color/abu_abu_muda"
+                app:layout_constraintStart_toStartOf="@+id/barang"
+                app:layout_constraintTop_toBottomOf="@+id/barang" />
+
+            <TextView
+                android:id="@+id/jumlah_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="@string/jumlahbarang4"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/kesusahan2"
+                app:layout_constraintTop_toBottomOf="@+id/kesusahan2"
+                app:drawableTint="@color/black" />
+
+            <TextView
+                android:id="@+id/kesusahan3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="240dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/kodebarang"
+                android:textColor="@color/abu_abu_muda"
+                app:layout_constraintStart_toStartOf="@+id/idbarang"
+                app:layout_constraintTop_toBottomOf="@+id/idbarang" />
+
+            <TextView
+                android:id="@+id/kode_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="@string/kode1"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/kesusahan3"
+                app:layout_constraintTop_toBottomOf="@+id/kesusahan3"
+                app:drawableTint="@color/black" />
+
+            <TextView
+                android:id="@+id/kesusahan4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/total3"
+                android:textColor="@color/abu_abu_muda"
+                app:layout_constraintStart_toStartOf="@+id/kode_barang"
+                app:layout_constraintTop_toBottomOf="@+id/kode_barang" />
+
+            <TextView
+                android:id="@+id/total_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="@string/totalbarang"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/kesusahan4"
+                app:layout_constraintTop_toBottomOf="@+id/kesusahan4"
+                app:drawableTint="@color/black" />
+
+            <View
+                android:id="@+id/horizontal_line"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/jumlah_barang"
+                app:layout_constraintTop_toBottomOf="@id/jumlah_barang" />
+
+            <Button
+                android:id="@+id/edit_button_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/buttonedit"
+                android:background="@drawable/pick_background_menu"
+                android:backgroundTint="@color/blue"
+                app:layout_constraintStart_toStartOf="@id/horizontal_line"
+                app:layout_constraintTop_toBottomOf="@id/horizontal_line"/>
+
+            <Button
+                android:id="@+id/delete_button_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/pick_background_menu"
+                android:backgroundTint="@color/abu_abu_muda"
+                android:text="@string/buttonhapus"
+                app:layout_constraintEnd_toEndOf="@id/horizontal_line"
+                app:layout_constraintTop_toBottomOf="@id/horizontal_line" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

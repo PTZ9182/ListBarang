@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">ListBarangPenjualan</string>
+    <string name="datakosing">Data Kosong</string>
+
+    <!--Login-->
+    <string name="lk_logo">logo</string>
+    <string name="lk_login">Login</string>
+    <string name="lk_email">Email</string>
+    <string name="lk_password">Password</string>
+    <string name="lk_isiform_perusahaan">Perusahaan</string>
+    <string name="lk_isiform_email">Email</string>
+    <string name="lk_isiform_password">Password</string>
+    <string name="lk_button_login">login</string>
+    <string name="lk_belumregis">Belum punya akun perusahaan?</string>
+    <string name="lk_regis">Buat Akun</string>
+
+    <!--Transaksi-->
+    <string name="transaksi">Transaksi</string>
+    <string name="nomor">Nomor</string>
+    <string name="nomor1">Masukkan Nomor</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="tanggal1">Masukkkan Tanggal</string>
+    <string name="costumer">Costumer</string>
+    <string name="kode">Kode</string>
+    <string name="kode1">Masukkan Kode</string>
+    <string name="nama">Nama</string>
+    <string name="nama1">Masukkan Nama</string>
+    <string name="notelp">No Telepon</string>
+    <string name="notelp1">Masukkan NoTelp</string>
+    <string name="buttonsimp">Simpan</string>
+
+    <!--listmain-->
+    <string name="kodemain">202101–0001</string>
+    <string name="namacostumer">Nama Costumer</string>
+    <string name="namacostumer1">Cust A</string>
+    <string name="jumlahbarang">Nomor</string>
+    <string name="jumlahbarang2">2</string>
+    <string name="tanggalmain">Tanggal</string>
+    <string name="tanggalmain1">01-Jan-2021</string>
+    <string name="total">NoTelp</string>
+    <string name="total1">245.000,00</string>
+    <string name="buttonedit">Edit</string>
+    <string name="buttonhapus">Delete</string>
+
+    <!--Barang-->
+    <string name="idbarang">01</string>
+    <string name="namabarang">Nama Barang</string>
+    <string name="namabarang1">Barang A</string>
+    <string name="jumlahbarang3">Jumlah Barang</string>
+    <string name="jumlahbarang4">1</string>
+    <string name="kodebarang">Harga Barang</string>
+    <string name="kodebarang1">01-Jan-2021</string>
+    <string name="total3">Total</string>
+    <string name="total4">245.000,00</string>
+    <string name="buttoneditbarang">Edit</string>
+    <string name="buttonhapusbarang">Delete</string>
+
+    <!--Masukkan Barang-->
+    <string name="barang">Barang</string>
+    <string name="kodebarangmasukkan">Kode Barang</string>
+    <string name="kodebarangmasukkan1">Masukkan Kode Barang</string>
+    <string name="nomorbarang">Nomor Barang</string>
+    <string name="nomorbarang1">Masukkkan Nomor Barang</string>
+    <string name="harga">Harga</string>
+    <string name="harga1">Masukkan Harga</string>
+    <string name="jumlah">Jumlah</string>
+    <string name="jumlah1">Masukkan Jumlah</string>
+    <string name="totalbarang">Total</string>
+    <string name="totalbarang1">Masukkan Total</string>
+    <string name="buttonsimpbarang">Simpan</string>
+
+    <!--Register-->
+    <string name="rg_logo">logo</string>
+    <string name="rg_nama_perusahaan">Nama</string>
+    <string name="rg_isiform_nama_perusahaan">Nama</string>
+    <string name="rg_register">Daftar Akun</string>
+    <string name="rg_email">Email</string>
+    <string name="rg_password">Password</string>
+    <string name="rg_isiform_email">Email</string>
+    <string name="rg_isiform_password">Password</string>
+    <string name="rg_button_daftar">Daftar</string>
+    <string name="rg_punyaakun">Sudah punya akun?</string>
+    <string name="rg_login">Masuk</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.ListBarangPenjualan" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Toolbar.inputData" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>
