@@ -48,14 +48,12 @@ class RegisterActivity : AppCompatActivity() {
         }
 
         loginText.setOnClickListener {
-            // Pindah ke LoginActivity
             val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
             startActivity(intent)
         }
     }
 
     private fun isValidCredentials(namaPerusahaan: String, email: String, password: String): Boolean {
-        // Validasi nama perusahaan, email, dan password, Anda bisa menambahkan validasi sesuai kebutuhan
         if (namaPerusahaan.isBlank() || email.isBlank() || password.isBlank()) {
             showToast("Semua kolom harus diisi.")
             return false

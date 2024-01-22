@@ -59,7 +59,6 @@ class TambahBarangActivity : AppCompatActivity() {
         val harga = binding.formBarangHarga.text.toString().trim()
         val total = binding.formBarangTotal.text.toString().trim()
 
-        // Validasi input
         if (isInputValid(nomor, jumlah, kode, harga, total)) {
             val db = dbHelper.writableDatabase
             val values = ContentValues().apply {
@@ -89,7 +88,6 @@ class TambahBarangActivity : AppCompatActivity() {
         val harga = binding.formBarangHarga.text.toString().trim()
         val total = binding.formBarangTotal.text.toString().trim()
 
-        // Validasi input
         if (isInputValid(nomor, jumlah, kode, harga, total)) {
             val db = dbHelper.writableDatabase
             val values = ContentValues().apply {

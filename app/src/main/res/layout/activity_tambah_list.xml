@@ -154,7 +154,7 @@
                 android:textColor="#515151"
                 android:textSize="24sp" />
 
-            <!--    E-mail-->
+
             <TextView
                 android:id="@+id/kode"
                 android:layout_width="wrap_content"

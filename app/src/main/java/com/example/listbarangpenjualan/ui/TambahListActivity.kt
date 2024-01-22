@@ -56,7 +56,6 @@ class TambahListActivity : AppCompatActivity() {
         val datePickerDialog = DatePickerDialog(
             this,
             { _: DatePicker, year: Int, month: Int, dayOfMonth: Int ->
-                // Set selected date to EditText
                 val selectedDate = Calendar.getInstance()
                 selectedDate.set(year, month, dayOfMonth)
                 binding.formTanggal.setText(
@@ -118,7 +117,6 @@ class TambahListActivity : AppCompatActivity() {
         val nama = binding.formNama.text.toString().trim()
         val noTelp = binding.formNotelp.text.toString().trim()
 
-        // Validasi input
         if (isInputValid(nomor, tanggal, kode, nama, noTelp)) {
             val db = dbHelper.writableDatabase
             val values = ContentValues().apply {
@@ -159,14 +157,10 @@ class TambahListActivity : AppCompatActivity() {
             return false
         }
 
-        // Validasi format tanggal
         if (!isDateValid(tanggal)) {
             showToast("Format tanggal tidak valid")
             return false
         }
-
-        // Tambahan validasi lainnya sesuai kebutuhan
-
         return true
     }
 

@@ -104,15 +104,12 @@ class MainActivity : AppCompatActivity(), DataAdapter.ItemClickListener {
 
 
     override fun onEditClick(data: DataModel) {
-        // Implementasi aksi ketika tombol Edit diklik
-        // Buka TambahListActivity untuk mode edit dengan data yang dipilih
         val intent = Intent(this, TambahListActivity::class.java)
         intent.putExtra(TambahListActivity.EXTRA_DATA, data)
         startActivity(intent)
     }
 
     override fun onDeleteClick(data: DataModel) {
-        // Implementasikan logika hapus di sini
         deleteDataFromDatabase(data)
         showMessage("Hapus diklik untuk item: ${data.nama}")
     }
@@ -125,7 +122,6 @@ class MainActivity : AppCompatActivity(), DataAdapter.ItemClickListener {
         db.delete(DatabaseHelper.FeedEntry.TABLE_NAME, selection, selectionArgs)
         db.close()
 
-        // Perbarui tampilan RecyclerView setelah menghapus data
         refreshDataInView()
     }
 
@@ -135,13 +131,11 @@ class MainActivity : AppCompatActivity(), DataAdapter.ItemClickListener {
             when (data?.getStringExtra(EXTRA_ACTION)) {
                 ACTION_ADD -> {
                     data?.getParcelableExtra<DataModel>(TambahListActivity.EXTRA_DATA)?.let { addedData ->
-                        // Tambahkan data ke adapter
                         addDataToRecyclerView(addedData)
                     }
                 }
                 ACTION_UPDATE -> {
                     data?.getParcelableExtra<DataModel>(TambahListActivity.EXTRA_DATA)?.let { updatedData ->
-                        // Perbarui data di adapter
                         updateDataInRecyclerView(updatedData)
                     }
                 }
@@ -181,7 +175,6 @@ class MainActivity : AppCompatActivity(), DataAdapter.ItemClickListener {
 
 
     private fun refreshDataInView() {
-        // Ambil data dari SQLite dan perbarui tampilan RecyclerView
         val db = dbHelper.readableDatabase
         val projection = arrayOf(
             DatabaseHelper.FeedEntry.COLUMN_NOMOR,
@@ -218,7 +211,6 @@ class MainActivity : AppCompatActivity(), DataAdapter.ItemClickListener {
 
         cursor?.close()
 
-        // Perbarui adapter RecyclerView dengan data terbaru
         val recyclerView = findViewById<RecyclerView>(R.id.data_latihan)
         val adapter = DataAdapter(dataList, this)
         recyclerView.adapter = adapter

@@ -35,7 +35,6 @@ class LoginActivity : AppCompatActivity() {
 
             if (isValidCredentials(email, password)) {
                 if (checkUser(email, password)) {
-                    // Login berhasil, pindah ke MainActivity
                     val intent = Intent(this@LoginActivity, MainActivity::class.java)
                     startActivity(intent)
                     finish()
@@ -48,14 +47,12 @@ class LoginActivity : AppCompatActivity() {
         }
 
         registerText.setOnClickListener {
-            // Pindah ke RegisterActivity
             val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
             startActivity(intent)
         }
     }
 
     private fun isValidCredentials(email: String, password: String): Boolean {
-        // Validasi email dan password, Anda bisa menambahkan validasi sesuai kebutuhan
         if (email.isBlank() || password.isBlank()) {
             showToast("Email dan password harus diisi.")
             return false

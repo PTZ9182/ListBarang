@@ -126,7 +126,6 @@ class BarangActivity : AppCompatActivity(), BarangAdapter.ItemClickListener {
         db.delete(DatabaseHelper.BarangEntry.TABLE_NAME, selection, selectionArgs)
         db.close()
 
-        // Perbarui tampilan RecyclerView setelah menghapus data
         refreshDataInView()
     }
 
@@ -182,7 +181,6 @@ class BarangActivity : AppCompatActivity(), BarangAdapter.ItemClickListener {
 
 
     private fun refreshDataInView() {
-        // Ambil data dari SQLite dan perbarui tampilan RecyclerView
         val db = dbHelper.readableDatabase
         val projection = arrayOf(
             DatabaseHelper.BarangEntry.COLUMN_NOMOR,
@@ -219,7 +217,6 @@ class BarangActivity : AppCompatActivity(), BarangAdapter.ItemClickListener {
 
         cursor?.close()
 
-        // Perbarui adapter RecyclerView dengan data terbaru
         val recyclerView = findViewById<RecyclerView>(R.id.data_latihan2)
         val adapter = BarangAdapter(dataList, this)
         recyclerView.adapter = adapter

@@ -140,7 +140,6 @@
                     android:importantForAutofill="no" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <!--    E-mail-->
             <TextView
                 android:id="@+id/barang_harga"
                 android:layout_width="wrap_content"
